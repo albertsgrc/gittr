@@ -1,0 +1,37 @@
+{
+    "name": "att",
+    "version": "1.0.0",
+    "description": "ATT is an automated time tracking script that runs in the background and listens for mouse and keyboard events to detect whether the computer user is working or not.",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "start": "ts-node -r tsconfig-paths/register src/app.ts | pino-pretty -t 'dd/mm HH:MM:ss.l'",
+        "lint": "tslint -p tsconfig.json -c tslint.json",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:cov": "jest --coverage",
+        "test:e2e": "jest --config ./test/jest-e2e.json"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/jest": "^23.3.9",
+        "@types/lodash": "^4.14.118",
+        "@types/node": "^10.12.9",
+        "@types/pino": "^5.8.1",
+        "jest": "^23.6.0",
+        "pino-pretty": "^2.2.3",
+        "prettier": "^1.15.2",
+        "ts-jest": "^23.10.4",
+        "ts-loader": "^5.3.0",
+        "ts-node": "^7.0.1",
+        "tsconfig-paths": "^3.7.0",
+        "tslint": "^5.11.0",
+        "typescript": "^3.1.6"
+    },
+    "dependencies": {
+        "lodash": "^4.17.11",
+        "pino": "^5.8.1"
+    }
+}

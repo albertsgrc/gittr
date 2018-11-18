@@ -1,0 +1,27 @@
+{
+    "defaultSeverity": "error",
+    "extends": ["tslint:recommended"],
+    "jsRules": {
+        "no-unused-expression": true
+    },
+    "rules": {
+        "max-file-line-count": [true, 400],
+        "file-name-casing": [true, "kebab-case"],
+        "indent": [true, "spaces", 4],
+        "quotemark": [true, "single"],
+        "max-line-length": [
+            true,
+            { "limit": 92, "ignore-pattern": "^import [^,]+ from |^export | implements " }
+        ],
+        "curly": [true, "ignore-same-line"],
+        "interface-name": [false],
+        "array-type": [true, "array"],
+        "object-literal-sort-keys": false,
+        "one-variable-per-declaration": false,
+        "no-console": false
+    },
+    "rulesDirectory": [],
+    "linterOptions": {
+        "exclude": ["*.json", "**/*.json"]
+    }
+}
