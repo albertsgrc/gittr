@@ -1,12 +1,12 @@
 {
-    "name": "att",
+    "name": "tsapp",
     "version": "1.0.0",
-    "description": "ATT is an automated time tracking script that runs in the background and listens for mouse and keyboard events to detect whether the computer user is working or not.",
-    "main": "index.js",
+    "description": "Typescript app starter",
+    "main": "src/main.ts",
     "scripts": {
         "build": "tsc",
         "format": "prettier --write \"src/**/*.ts\"",
-        "start": "ts-node -r tsconfig-paths/register src/app.ts | pino-pretty -t 'dd/mm HH:MM:ss.l'",
+        "start": "ts-node -r tsconfig-paths/register src/main.ts | pino-pretty -t 'dd/mm HH:MM:ss.l'",
         "lint": "tslint -p tsconfig.json -c tslint.json",
         "test": "jest",
         "test:watch": "jest --watch",
