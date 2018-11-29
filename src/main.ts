@@ -1,3 +1,3 @@
-import log from './logger';
+import log from "./logger";
 
-log.info('Hello world');
+log.info("Hello world");

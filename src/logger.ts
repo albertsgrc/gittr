@@ -1,7 +1,7 @@
-import * as pino from 'pino';
-import { name } from '../package.json';
+import * as pino from "pino";
+import { name } from "../package.json";
 
 export default pino({
     name,
-    level: 'debug',
+    level: "debug",
 });
