@@ -1,7 +1,7 @@
 {
-    "name": "tsapp",
+    "name": "gittt",
     "version": "1.0.0",
-    "description": "Typescript app starter",
+    "description": "Tracks time spent on a Gitlab issue. Connects with toggl.",
     "main": "index.js",
     "scripts": {
         "build": "tsc --project ./src/tsconfig.json",

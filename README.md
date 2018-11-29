@@ -1,1 +1,1 @@
-# Typescript app starter
+# Gittt
