@@ -4,89 +4,49 @@
         "no-unused-expression": true
     },
     "linterOptions": {
-        "exclude": [
-            "**/*.json",
-            "*.json"
-        ]
+        "exclude": ["**/*.json", "*.json"]
     },
     "rules": {
         "adjacent-overload-signatures": true,
         "align": {
-            "options": [
-                "parameters",
-                "statements"
-            ]
+            "options": ["parameters", "statements"]
         },
-        "array-type": [
-            true,
-            "array-simple"
-        ],
+        "array-type": [true, "array-simple"],
         "arrow-parens": true,
         "arrow-return-shorthand": true,
         "ban-types": {
             "options": [
-                [
-                    "Avoid using the `Boolean` type. Did you mean `boolean`?",
-                    "Boolean"
-                ],
+                ["Avoid using the `Boolean` type. Did you mean `boolean`?", "Boolean"],
                 [
                     "Avoid using the `Function` type. Prefer a specific function type, like `() => void`.",
                     "Function"
                 ],
-                [
-                    "Avoid using the `Number` type. Did you mean `number`?",
-                    "Number"
-                ],
-                [
-                    "Avoid using the `Object` type. Did you mean `object`?",
-                    "Object"
-                ],
-                [
-                    "Avoid using the `String` type. Did you mean `string`?",
-                    "String"
-                ],
-                [
-                    "Avoid using the `Symbol` type. Did you mean `symbol`?",
-                    "Symbol"
-                ]
+                ["Avoid using the `Number` type. Did you mean `number`?", "Number"],
+                ["Avoid using the `Object` type. Did you mean `object`?", "Object"],
+                ["Avoid using the `String` type. Did you mean `string`?", "String"],
+                ["Avoid using the `Symbol` type. Did you mean `symbol`?", "Symbol"]
             ]
         },
         "callable-types": true,
         "class-name": true,
         "comment-format": {
-            "options": [
-                "check-space"
-            ]
+            "options": ["check-space"]
         },
         "curly": true,
         "cyclomatic-complexity": false,
         "eofline": true,
-        "file-name-casing": [
-            true,
-            "kebab-case"
-        ],
+        "file-name-casing": [true, "kebab-case"],
         "forin": false,
         "import-spacing": true,
-        "indent": [
-            true,
-            "spaces",
-            4
-        ],
-        "interface-name": [
-            false
-        ],
+        "indent": [true, "spaces", 4],
+        "interface-name": [false],
         "interface-over-type-literal": true,
         "jsdoc-format": true,
         "label-position": true,
         "max-classes-per-file": {
-            "options": [
-                1
-            ]
+            "options": [1]
         },
-        "max-file-line-count": [
-            true,
-            400
-        ],
+        "max-file-line-count": [true, 400],
         "max-line-length": [
             true,
             {
@@ -132,11 +92,8 @@
         "no-unused-expression": true,
         "no-use-before-declare": false,
         "no-var-keyword": true,
-        "no-var-requires": true,
         "object-literal-key-quotes": {
-            "options": [
-                "consistent-as-needed"
-            ]
+            "options": ["consistent-as-needed"]
         },
         "object-literal-shorthand": true,
         "object-literal-sort-keys": false,
@@ -151,10 +108,7 @@
         },
         "one-variable-per-declaration": false,
         "only-arrow-functions": {
-            "options": [
-                "allow-declarations",
-                "allow-named-functions"
-            ]
+            "options": ["allow-declarations", "allow-named-functions"]
         },
         "ordered-imports": {
             "options": {
@@ -166,15 +120,10 @@
         "prefer-const": true,
         "prefer-for-of": true,
         "quotemark": {
-            "options": [
-                "avoid-escape",
-                "double"
-            ]
+            "options": ["avoid-escape", "double"]
         },
         "semicolon": {
-            "options": [
-                "always"
-            ]
+            "options": ["always"]
         },
         "space-before-function-paren": {
             "options": {
@@ -193,9 +142,7 @@
             }
         },
         "triple-equals": {
-            "options": [
-                "allow-null-check"
-            ]
+            "options": ["allow-null-check"]
         },
         "typedef": false,
         "typedef-whitespace": {
@@ -220,11 +167,7 @@
         "unified-signatures": true,
         "use-isnan": true,
         "variable-name": {
-            "options": [
-                "allow-pascal-case",
-                "ban-keywords",
-                "check-format"
-            ]
+            "options": ["allow-pascal-case", "ban-keywords", "check-format"]
         },
         "whitespace": {
             "options": [

@@ -7,7 +7,6 @@
         "build": "tsc --project ./src/tsconfig.json",
         "format": "prettier --write \"src/**/*.ts\"",
         "start": "node index.js",
-        "start:dev": "node index.js | pino-pretty -t 'dd/mm HH:MM:ss.l'",
         "lint": "tslint -p tsconfig.json -c tslint.json",
         "test": "jest",
         "test:watch": "jest --watch",
@@ -22,7 +21,6 @@
         "@types/node": "^10.12.9",
         "@types/pino": "^5.8.1",
         "jest": "^23.6.0",
-        "pino-pretty": "^2.2.3",
         "prettier": "^1.15.2",
         "ts-jest": "^23.10.4",
         "ts-loader": "^5.3.0",
@@ -32,7 +30,8 @@
         "typescript": "^3.1.6"
     },
     "dependencies": {
+        "clime": "^0.5.10",
         "lodash": "^4.17.11",
-        "pino": "^5.8.1"
+        "winston": "^3.1.0"
     }
 }
