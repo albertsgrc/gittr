@@ -1,11 +1,12 @@
 import { createLogger } from "winston";
 import winston = require("winston");
-import { name } from "../package.json";
+import { isDevelopment } from "./is-development";
 
 export const Log = createLogger({
+    level: isDevelopment() ? "debug" : "info",
     format: winston.format.combine(
         winston.format.colorize(),
-        winston.format.align(),
+        // winston.format.align(),
         winston.format.prettyPrint(),
         winston.format.printf((info) => {
             const { level, message, ...args } = info;
