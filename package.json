@@ -1,6 +1,6 @@
 {
     "name": "gittr",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Track time spent on a Gitlab issue using Toggl",
     "main": "index.js",
     "bin": {
