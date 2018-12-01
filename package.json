@@ -1,16 +1,16 @@
 {
-    "name": "gittt",
+    "name": "gittr",
     "version": "1.0.0",
     "description": "Tracks time spent on a Gitlab issue. Connects with toggl.",
     "main": "index.js",
     "bin": {
-        "gittt": "dist/src/main.js"
+        "gittr": "dist/src/main.js"
     },
     "scripts": {
         "build": "tsc",
         "format": "prettier --write \"src/**/*.ts\"",
         "start": "node index.js",
-        "start:dev": "GITTT_ENV=development node index.js",
+        "start:dev": "GITTR_ENV=development node index.js",
         "lint": "tslint -p tsconfig.json -c tslint.json",
         "test": "jest",
         "test:watch": "jest --watch",

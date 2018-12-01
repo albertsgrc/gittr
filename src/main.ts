@@ -13,6 +13,7 @@ import { GitlabClient } from "gitlab-client";
 
 import { TogglClient } from "toggl-client";
 import { isDevelopment } from "utils/is-development";
+import * as pkg from "../package.json";
 import { Config } from "./config";
 
 const main = async () => {
@@ -27,7 +28,7 @@ const main = async () => {
 
     CLI.commandModuleExtension = isDevelopment() ? ".ts" : ".js";
 
-    const cli = new CLI("gittt", Path.join(__dirname, "commands"));
+    const cli = new CLI(pkg.name, Path.join(__dirname, "commands"));
 
     const shim = new Shim(cli);
     shim.execute(process.argv);

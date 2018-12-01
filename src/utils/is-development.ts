@@ -1,3 +1,3 @@
 export function isDevelopment() {
-    return process.env.GITTT_ENV === "development";
+    return process.env.GITTR_ENV === "development";
 }
