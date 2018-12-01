@@ -61,7 +61,7 @@ export class GitlabClient {
                 }
             `);
         } else {
-            Log.info(
+            Log.warn(
                 `Did not log time to Gitlab because ${chalk.bold(currentBranchName)} ` +
                     "is not an issue branch",
             );
