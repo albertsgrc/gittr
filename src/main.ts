@@ -1,7 +1,16 @@
+#!/usr/bin/env node
+
+import * as Path from "path";
+
+require("tsconfig-paths").register({
+    baseUrl: __dirname,
+    paths: {},
+});
+
 import { CLI, Shim } from "clime";
 import { GitRepository } from "git-repository";
 import { GitlabClient } from "gitlab-client";
-import * as Path from "path";
+
 import { TogglClient } from "toggl-client";
 import { isDevelopment } from "utils/is-development";
 import { Config } from "./config";

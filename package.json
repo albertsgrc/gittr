@@ -4,7 +4,7 @@
     "description": "Tracks time spent on a Gitlab issue. Connects with toggl.",
     "main": "index.js",
     "bin": {
-        "gittt": "index.js"
+        "gittt": "dist/src/main.js"
     },
     "scripts": {
         "build": "tsc",
