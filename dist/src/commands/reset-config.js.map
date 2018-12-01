@@ -1,0 +1,1 @@
+{"version":3,"file":"reset-config.js","sourceRoot":"","sources":["../../../src/commands/reset-config.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;AAAA,iCAA0D;AAC1D,mCAAgC;AAKhC,gBAAA,eAAqB,SAAQ,eAAO;IAEnB,OAAO;;YAChB,eAAM,CAAC,KAAK,EAAE,CAAC;QACnB,CAAC;KAAA;CACJ,CAAA;AAHG;IADC,gBAAQ;;;;wCAGR;AAJL;IAHC,eAAO,CAAC;QACL,WAAW,EAAE,0BAA0B;KAC1C,CAAC;aAMD"}

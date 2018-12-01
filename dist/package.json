@@ -1,0 +1,54 @@
+{
+    "name": "gittr",
+    "version": "1.0.3",
+    "description": "Track time spent on a Gitlab issue using Toggl",
+    "main": "index.js",
+    "bin": {
+        "gittr": "dist/src/main.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "start": "node index.js",
+        "start:dev": "GITTR_ENV=development node index.js",
+        "lint": "tslint -p tsconfig.json -c tslint.json",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:cov": "jest --coverage",
+        "test:e2e": "jest --config ./test/jest-e2e.json"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/configstore": "^2.1.1",
+        "@types/inquirer": "0.0.43",
+        "@types/jest": "^23.3.9",
+        "@types/joi": "^14.0.0",
+        "@types/lodash": "^4.14.118",
+        "@types/node": "^10.12.9",
+        "@types/pino": "^5.8.1",
+        "@types/request": "^2.48.1",
+        "@types/request-promise-native": "^1.0.15",
+        "jest": "^23.6.0",
+        "prettier": "^1.15.2",
+        "ts-jest": "^23.10.4",
+        "ts-loader": "^5.3.0",
+        "ts-node": "^7.0.1",
+        "tsconfig-paths": "^3.7.0",
+        "tslint": "^5.11.0",
+        "typescript": "^3.1.6"
+    },
+    "dependencies": {
+        "chalk": "^2.4.1",
+        "clime": "^0.5.10",
+        "configstore": "^4.0.0",
+        "inquirer": "^6.2.1",
+        "joi": "^14.3.0",
+        "lodash": "^4.17.11",
+        "request": "^2.88.0",
+        "request-promise-native": "^1.0.5",
+        "simple-git": "^1.107.0",
+        "toggl-api": "^1.0.1",
+        "winston": "^3.1.0"
+    }
+}
