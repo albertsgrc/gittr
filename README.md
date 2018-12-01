@@ -33,7 +33,7 @@ To reconfigure the repository path:
 ### Toggl project
 
 You need to create a Toggl project manually.
-The project name must match the format: NAMESPACE/PROJECT from
+The project name must match the format: `namespace/project` from
 your Gitlab repository.
 
 ### Timing
@@ -43,7 +43,7 @@ To start a new timer:
     gittr start
 
 This will start a timer with a description set to the current branch name
-of the configured repository. The timer will be added to the
+of the configured repository.
 
 To stop the timer:
 
