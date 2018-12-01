@@ -83,8 +83,8 @@ export class Config {
                 this.justInitialized = true;
 
                 Log.info(
-                    `No configuration found. Will ask some questions\
-                     and create a new config at ${chalk.bold(this.configStore.path)}`,
+                    `No configuration found. Will ask some questions ` +
+                        `and create a new config at ${chalk.bold(this.configStore.path)}`,
                 );
             }
 
