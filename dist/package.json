@@ -1,15 +1,15 @@
 {
     "name": "gittr",
-    "version": "1.0.3",
+    "version": "1.0.10",
     "description": "Track time spent on a Gitlab issue using Toggl",
-    "main": "index.js",
+    "main": "dist/src/main.js",
     "bin": {
         "gittr": "dist/src/main.js"
     },
     "scripts": {
         "build": "tsc",
         "format": "prettier --write \"src/**/*.ts\"",
-        "start": "node index.js",
+        "start": "node dist/src/main.js",
         "start:dev": "GITTR_ENV=development node index.js",
         "lint": "tslint -p tsconfig.json -c tslint.json",
         "test": "jest",
@@ -17,12 +17,25 @@
         "test:cov": "jest --coverage",
         "test:e2e": "jest --config ./test/jest-e2e.json"
     },
+    "author": "Albert Segarra Roca",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/albertsgrc/gittr.git"
     },
-    "author": "",
-    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/albertsgrc/gittr/issues"
+    },
+    "homepage": "https://github.com/albertsgrc/gittr#readme",
+    "keywords": [
+        "time",
+        "tracking",
+        "toggl",
+        "gitlab",
+        "issue",
+        "timetracker",
+        "cli"
+    ],
     "devDependencies": {
         "@types/configstore": "^2.1.1",
         "@types/inquirer": "0.0.43",
@@ -38,7 +51,6 @@
         "ts-jest": "^23.10.4",
         "ts-loader": "^5.3.0",
         "ts-node": "^7.0.1",
-        "tsconfig-paths": "^3.7.0",
         "tslint": "^5.11.0",
         "typescript": "^3.1.6"
     },
@@ -53,6 +65,7 @@
         "request-promise-native": "^1.0.5",
         "simple-git": "^1.107.0",
         "toggl-api": "^1.0.1",
+        "tsconfig-paths": "^3.7.0",
         "winston": "^3.1.0"
     }
 }

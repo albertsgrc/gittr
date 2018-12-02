@@ -18,6 +18,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const clime_1 = require("clime");
+const config_1 = require("config");
+const git_repository_1 = require("git-repository");
 const gitlab_client_1 = require("gitlab-client");
 const toggl_client_1 = require("toggl-client");
 const logger_1 = require("utils/logger");
@@ -27,6 +29,8 @@ let default_1 = class default_1 extends clime_1.Command {
         return __awaiter(this, void 0, void 0, function* () {
             const duration = yield toggl_client_1.TogglClient.stop();
             logger_1.Log.info(`Stopped toggl timer. Total time: ${time_to_string_1.timeToString(duration * 1000, true)}`);
+            const { hostname } = yield git_repository_1.GitRepository.getRemoteInfo();
+            gitlab_client_1.GitlabClient.initialize(`https://${hostname}`, config_1.Config.gitlabToken);
             gitlab_client_1.GitlabClient.logTime(duration * 1000);
         });
     }

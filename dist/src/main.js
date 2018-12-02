@@ -16,7 +16,6 @@ require("tsconfig-paths").register({
 });
 const clime_1 = require("clime");
 const git_repository_1 = require("git-repository");
-const gitlab_client_1 = require("gitlab-client");
 const toggl_client_1 = require("toggl-client");
 const is_development_1 = require("utils/is-development");
 const pkg = require("../package.json");
@@ -25,12 +24,10 @@ const main = () => __awaiter(this, void 0, void 0, function* () {
     yield config_1.Config.load();
     git_repository_1.GitRepository.initialize(config_1.Config.gitRepositoryPath);
     toggl_client_1.TogglClient.initialize(config_1.Config.togglToken);
-    const { hostname } = yield git_repository_1.GitRepository.getRemoteInfo();
-    gitlab_client_1.GitlabClient.initialize(`https://${hostname}`, config_1.Config.gitlabToken);
     clime_1.CLI.commandModuleExtension = is_development_1.isDevelopment() ? ".ts" : ".js";
     const cli = new clime_1.CLI(pkg.name, Path.join(__dirname, "commands"));
     const shim = new clime_1.Shim(cli);
-    shim.execute(process.argv);
+    yield shim.execute(process.argv);
 });
 main();
 //# sourceMappingURL=main.js.map
