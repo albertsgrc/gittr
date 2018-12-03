@@ -21,12 +21,10 @@ const schema = Joi.object({
     path: Joi.string(),
     gitlab: Joi.object({
         token: Joi.string()
-            .token()
             .required(),
     }).required(),
     toggl: Joi.object({
         token: Joi.string()
-            .token()
             .required(),
     }).required(),
     gitRepositoryPath: Joi.string().default(process.cwd()),
