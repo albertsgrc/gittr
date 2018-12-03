@@ -13,13 +13,11 @@ const schema = Joi.object({
 
     gitlab: Joi.object({
         token: Joi.string()
-            .token()
             .required(),
     }).required(),
 
     toggl: Joi.object({
         token: Joi.string()
-            .token()
             .required(),
     }).required(),
 
